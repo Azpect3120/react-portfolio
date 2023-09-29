@@ -3,20 +3,42 @@ import "./assets/main.css"
 function Header (): JSX.Element {
 
     return (
-        <header className="bg-red-500 w-full h-screen">
-            <div className="w-1/2 h-full bg-blue-400">
-                <p className="">
-                    Hi there, I am
-                </p>
-                <h1 className="">
-                    Hayden Hargreaves
+        <header className="w-full h-screen flex bg-dark-background">
+            <div className="w-1/2 h-full flex flex-col items-center justify-center cursor-default select-none">
+                <h1 className="text-7xl pb-4 font-bold w-2/3 text-dark-text-active">
+                    <span className="text-lg font-normal">
+                        Hi there, I am
+                    </span>
+                    <br />
+                    Hayden 
+                    <br /> 
+                    Hargreaves
                 </h1>
-                <p className="">
-                    Developer - Software Engineer
-                </p>
-                <button className="">
-                    Learn More
-                </button>
+                <div className="w-2/3">
+                    <p className="text-xl text-dark-buttons">
+                        <span className="hover:text-dark-buttons-active transition-all">
+                             Developer
+                        </span>
+                        <span className="px-2">
+                            - 
+                        </span> 
+                        <span className="hover:text-dark-buttons-active transition-all">
+                             Software Engineer
+                        </span>
+                    </p>
+
+                    <p className="text-md py-2 text-dark-text-active">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt corrupti numquam suscipit quam asperiores et neque at quidem exercitationem, vero expedita eos assumenda provident qui dicta iste aliquam! Consequatur.
+                    </p>
+                    <button className="bg-dark-buttons hover:bg-dark-buttons-active transition-all my-2 px-8 py-2 rounded-full">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div className="w-1/2 h-full flex items-center justify-center">
+                <div className="bg-dark-buttons h-2/3 w-2/3 rounded-full">
+
+                </div>
             </div>
         </header>
     );
