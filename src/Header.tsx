@@ -1,9 +1,16 @@
 import "./assets/main.css"
+import Github from "./assets/logo-github.svg"
 
 function Header (): JSX.Element {
 
     return (
         <header className="w-full h-screen flex bg-dark-background">
+            <div className="absolute w-full h-28 flex items-center justify-end">
+                <a href="https:/github.com/Azpect3120" target="_blank">
+                    <img src={Github} className="w-10 h-10 mr-10 transition-all hover:scale-105" />
+                </a>
+            </div>
+
             <div className="w-1/2 h-full flex flex-col items-center justify-center cursor-default select-none">
                 <h1 className="text-7xl pb-4 font-bold w-2/3 text-dark-text-active">
                     <span className="text-lg font-normal">
@@ -17,13 +24,13 @@ function Header (): JSX.Element {
                 <div className="w-2/3">
                     <p className="text-xl text-dark-buttons">
                         <span className="hover:text-dark-buttons-active transition-all">
-                             Developer
+                            Developer
                         </span>
                         <span className="px-2">
                             - 
                         </span> 
                         <span className="hover:text-dark-buttons-active transition-all">
-                             Software Engineer
+                            Software Engineer
                         </span>
                     </p>
 
